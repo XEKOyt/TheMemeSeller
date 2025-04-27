@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Meme Seller - Meme-flavored Food Truck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Audio elements -->
+  <audio id="memeSound1" src="https://www.myinstants.com/media/sounds/vine-boom.mp3"></audio>
+  <audio id="memeSound2" src="https://www.myinstants.com/media/sounds/bonk-sound-effect.mp3"></audio>
+  <audio id="memeSound3" src="https://www.myinstants.com/media/sounds/windows-xp-error.mp3"></audio>
+  <audio id="memeSound4" src="https://www.myinstants.com/media/sounds/amongus.mp3"></audio>
+  <audio id="memeSound5" src="https://www.myinstants.com/media/sounds/bruh.mp3"></audio>
+  <audio id="soundLetMeKnow" src="https://www.myinstants.com/media/sounds/let-me-know.mp3"></audio>
+  <audio id="rickroll" src="https://www.myinstants.com/media/sounds/rickroll.mp3"></audio>
+  <audio id="sound1" src="https://www.myinstants.com/media/sounds/bla-bla-bla-ble-ble-ble.mp3"></audio>
+  <audio id="sound2" src="https://www.myinstants.com/media/sounds/discord-notification.mp3"></audio>
+  <audio id="sound3" src="https://www.myinstants.com/media/sounds/le-poisson-steve.mp3"></audio>
+  <audio id="sound4" src="https://www.myinstants.com/media/sounds/among-us-role-reveal-sound.mp3"></audio>
+  <audio id="sound5" src="https://www.myinstants.com/media/sounds/tuco-get-out.mp3"></audio>
+  <audio id="sound6" src="https://www.myinstants.com/media/sounds/french-meme-song.mp3"></audio>
+  <audio id="sound7" src="https://www.myinstants.com/media/sounds/rizz-sound-effect.mp3"></audio>
+
+  <div class="container">
+    <header>
+      <h1>
+        <span class="emoji" style="--delay: 0;">🍔</span> 
+        The Meme Seller 
+        <span class="emoji" style="--delay: 1;">🚚</span>
+      </h1>
+      <p class="tagline">Our food truck will never gonna give you up!</p>
+    </header>
+
+    <div class="nav-container">
+      <div class="nav-tabs">
+        <button class="nav-tab active" data-tab="menu">🍽️ Meme-nu</button>
+        <button class="nav-tab" data-tab="about">🧑‍🍳 Our Story</button>
+        <button class="nav-tab" data-tab="gallery">📸 Meme Gallery</button>
+        <button class="nav-tab" data-tab="location">📍 Find Us</button>
+        <button class="nav-tab" data-tab="order">🛒 Order Online</button>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="content">
+        <!-- Menu Page -->
+        <div class="page active" id="menu">
+            <div class="filter-container">
+                <h3>Filter Menu</h3>
+                <div class="filter-group categories">
+                  <strong>Category:</strong><br>
+                  <label><input type="checkbox" value="Main Dishes" checked> Main Dishes</label>
+                  <label><input type="checkbox" value="Appetizers" checked> Appetizers</label>
+                  <label><input type="checkbox" value="Desserts" checked> Desserts</label>
+                  <label><input type="checkbox" value="Side Dishes" checked> Side Dishes</label>
+                  <label><input type="checkbox" value="Original Drinks" checked> Drinks</label>
+                  <label><input type="checkbox" value="El Morjene Couscous" checked> Bestsellers</label>
+                </div>
+                <div class="filter-group price-range">
+                  <strong>Price Range:</strong><br>
+                  <input type="number" id="min-price" placeholder="Min $" step="0.01"> -
+                  <input type="number" id="max-price" placeholder="Max $" step="0.01">
+                </div>
+                <button id="apply-filters">Apply Filters</button>
+                <button id="reset-filters">Reset</button>
+              </div>
+          <div class="menu-section">
+            <h2>🍲 Main Dishes</h2>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍣 Rick-rolls</div>
+              <div class="menu-item-desc">Sushi that rickrolls you, nah they'll never do that</div>
+              <div class="menu-item-price">$12.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍗 Chicken Jockey</div>
+              <div class="menu-item-desc">Chicken wings with guacamole</div>
+              <div class="menu-item-price">$6.90</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍲 The High Ground</div>
+              <div class="menu-item-desc">A ratatouille that gives you power over Anakin</div>
+              <div class="menu-item-price">$13.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🐟 1£ fish</div>
+              <div class="menu-item-desc">A fish that's really really good and really really cheap</div>
+              <div class="menu-item-price">$1</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍬 The Sweet Sacrifice</div>
+              <div class="menu-item-desc">Worth every calories (just alot of sugar (you'll probably get diabity from that))</div>
+              <div class="menu-item-price">$6.99</div>
+            </div>
+            
+            <div class="menu-item bestseller">
+              <div class="menu-item-name">🥘 El Morjene Couscous</div>
+              <div class="menu-item-desc">🦶🦶</div>
+              <div class="menu-item-price">$14.99</div>
+            </div>
+          </div>
+          
+          <div class="menu-section">
+            <h2>🥕 Appetizers</h2>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🥕 Kakarot-o!</div>
+              <div class="menu-item-desc">Shredded carrots that'll power you up to Super Saiyan. Over 9000 taste levels</div>
+              <div class="menu-item-price">$2.99</div>
+            </div>
+            
+            <div class="menu-item bestseller">
+              <div class="menu-item-name">🥖 Oui Oui Mmmh Baguette</div>
+              <div class="menu-item-desc">Just a baguette, but make it more french, like really french</div>
+              <div class="menu-item-price">$1.69</div>
+            </div>
+          </div>
+          
+          <div class="menu-section">
+            <h2>🍰 Desserts</h2>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍌 Banana Cat</div>
+              <div class="menu-item-desc">Banana with cake icing, you'll definitely cry after eating that</div>
+              <div class="menu-item-price">$3.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🎂 The Cake Is a Lie</div>
+              <div class="menu-item-desc">Regular chocolate cake (or is it?)</div>
+              <div class="menu-item-price">$5.49</div>
+            </div>
+            
+            <div class="menu-item bestseller">
+              <div class="menu-item-name">🍎 Bad Apple</div>
+              <div class="menu-item-desc">What can I see? An apple</div>
+              <div class="menu-item-price">$0.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🟢 Ender Pearl</div>
+              <div class="menu-item-desc">Teleport your taste buds to another dimension</div>
+              <div class="menu-item-price">$0.99</div>
+            </div>
+          </div>
+          
+          <div class="menu-section">
+            <h2>🍟 Side Dishes</h2>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🍟 Fahrrad Fries</div>
+              <div class="menu-item-desc">"Far-out" fries that are totally rad</div>
+              <div class="menu-item-price">$4.99</div>
+            </div>
+          </div>
+          
+          <div class="menu-section">
+            <h2>🥤 Original Drinks</h2>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">💧 Bo'o' Wo'o'</div>
+              <div class="menu-item-desc">Water with a British accent</div>
+              <div class="menu-item-price">$2.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">🥛 G.O.A.T.E.D Milk</div>
+              <div class="menu-item-desc">Greatest Of All Time Extra Delicious milk</div>
+              <div class="menu-item-price">$3.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">☕ Balerina Capuchina</div>
+              <div class="menu-item-desc">Coffee that makes you twirl</div>
+              <div class="menu-item-price">$5.99</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-name">☕ Fruli Frula</div>
+              <div class="menu-item-desc">Coffee with no sugar - straight to the point</div>
+              <div class="menu-item-price">$5.99</div>
+            </div>
+          </div>
+          
+          <div class="reviews-section">
+            <h2>⭐ Customer Reviews</h2>
+            
+            <div class="reviews-container">
+              <div class="review-card">
+                <div class="reviewer">
+                  <img src="https://batman-univers.fr/wp-content/uploads/2024/12/1735271884_Star-Wars-a-le-parfait-Anakin-Skywalker.jpg" alt="Reviewer" class="reviewer-img">
+                  <div class="reviewer-info">
+                    <div class="reviewer-name">Anakin</div>
+                    <div class="reviewer-date">May 4th, 2024</div>
+                  </div>
+                </div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                <div class="review-text">Nice food, may the 4th be with you</div>
+              </div>
+              
+              <div class="review-card">
+                <div class="reviewer">
+                  <img src="https://media.bandsintown.com/300x300/15786554.webp" alt="Reviewer" class="reviewer-img">
+                  <div class="reviewer-info">
+                    <div class="reviewer-name">Rick Astley</div>
+                    <div class="reviewer-date">April 1, 2025</div>
+                  </div>
+                </div>
+                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                <div class="review-text">Never gonna give these Rick-rolls up! Never gonna let these flavors down!</div>
+              </div>
+              
+              <div class="review-card">
+                <div class="reviewer">
+                  <img src="https://i.scdn.co/image/ab6761610000e5ebc151a5dd134c40493a3100ba" alt="Reviewer" class="reviewer-img">
+                  <div class="reviewer-info">
+                    <div class="reviewer-name">Mr beast</div>
+                    <div class="reviewer-date">Febuary 30th, 2026</div>
+                  </div>
+                </div>
+                <div class="review-rating">⭐⭐⭐⭐</div>
+                <div class="review-text">I love this food sadly I didn't got salt in my Kakarot-o, still good tho!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Page -->
+        <div class="page" id="about">
+          <h2>Our Meme-tastic Story</h2>
+          <p>What happens when a group of friends are hungry, broke, and obsessed with memes? The Meme Seller food truck is born!</p>
+          
+          <div class="story-script">
+            <h3>How It Started</h3>
+            <p>Simple. Because we were hungry…</p>
+            <p>…and broke.</p>
+            <p>So we said, 'What if we made food… but made it a meme?'</p>
+            <p>Now we're out here serving dishes Gordon Ramsay would cry over.</p>
+            <p>And honestly, we just wanted a valid excuse to rickroll people with sushis</p>
+            <p>Anyways..</p>
+            <p>Welcome to The Meme Seller. We feed your hunger... and your brainroted brain.</p>
+          </div>
+          
+          <h3>Meet Our Meme Team (for real)</h3>
+          <div class="staff-container">
+            <div class="staff-member">
+              <img src="https://cdn.discordapp.com/avatars/1128003736871129209/7d2ee5a057aac2a5af1863e2c29f38ab.webp?size=1024&format=webp&width=461&height=461" alt="Kenz" class="staff-image">
+              <div class="staff-name">Kenz</div>
+              <div class="staff-role">Meme Master</div>
+              <div class="staff-bio">Made the whole website, some ideas, the 2nd concept of prices and a good part of the script.</div>
+            </div>
+            
+            <div class="staff-member">
+              <img src="https://cdn.discordapp.com/avatars/943194748389298226/a_a0fc2ab39e46a27184af772e2c251c39.gif?size=1024&width=461&height=461" alt="Rayan" class="staff-image">
+              <div class="staff-name">Rayan</div>
+              <div class="staff-role">Sigma</div>
+              <div class="staff-bio">Made most of the art and some ideas.</div>
+            </div>
+            
+            <div class="staff-member">
+              <img src="https://cdn.discordapp.com/avatars/1100313870674972754/b4141e308105dfd0daebe1928b7f0d82.webp?size=1024&format=webp&width=461&height=461" alt="Toyib" class="staff-image">
+              <div class="staff-name">Toyib</div>
+              <div class="staff-role">Dessert Memelord</div>
+              <div class="staff-bio">Made a good part of the menu, first concept of the price and a good part of the script.</div>
+            </div>
+            
+            <div class="staff-member">
+              <img src="https://cdn.discordapp.com/avatars/926149778197332049/7fd08f31c053ad3a6085304350ebd766.webp?size=1024&format=webp&width=461&height=461" alt="Marin" class="staff-image">
+              <div class="staff-name">Marin</div>
+              <div class="staff-role">Meme Mixologist</div>
+              <div class="staff-bio">Made some of the art and some ideas.</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gallery Page -->
+        <div class="page" id="gallery">
+          <h2>Meme Food Gallery</h2>
+          <p>Feast your eyes on our most epic creations! Click on any image to enlarge.</p>
+          
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJrlf9s3Mk5LDXt3n81nGyBOamRhd4AGj_kg&s" alt="The cake is a">
+            </div>
+            <div class="gallery-item">
+              <img src="elmorjenecouscous.jpg" alt="El Morjene Couscous">
+            </div>
+            <div class="gallery-item">
+              <img src="the high ground.jpg" alt="The High Ground">
+            </div>
+            <div class="gallery-item">
+              <img src="bananacat.jpg" alt="Banana Cat">
+            </div>
+            <div class="gallery-item">
+              <img src="enderpearl.png" alt="Ender Pearl">
+            </div>
+            <div class="gallery-item">
+              <img src="https://i.ytimg.com/vi/9lNZ_Rnr7Jc/maxresdefault.jpg" alt="Bad apple">
+            </div>
+          </div>
+          
+          <!-- Modal for enlarged images -->
+          <div class="modal" id="gallery-modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+              <img id="modal-img" src="">
+              <video id="modal-video" controls style="display: none;"></video>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Location Page -->
+        <div class="page" id="location">
+          <h2>Find Our Truck</h2>
+          <p>We're always on the move! Check our schedule and locations below:</p>
+          
+          <div class="location-info">
+            <div class="location-card">
+              <h3>Weekly Schedule</h3>
+              <ul>
+                <li><strong>Monday:</strong> Central Park (11 AM - 3 PM)</li>
+                <li><strong>Tuesday:</strong> Tech District (11 AM - 7 PM)</li>
+                <li><strong>Wednesday:</strong> University Campus (10 AM - 4 PM)</li>
+                <li><strong>Thursday:</strong> Downtown Square (11 AM - 8 PM)</li>
+                <li><strong>Friday:</strong> Beach Boardwalk (12 PM - 9 PM)</li>
+                <li><strong>Saturday:</strong> Food Truck Rally (10 AM - 10 PM)</li>
+                <li><strong>Sunday:</strong> Farmers Market (9 AM - 2 PM)</li>
+              </ul>
+            </div>
+            
+            <div class="location-card">
+              <h3>Follow Our Journey</h3>
+              <p>For real-time updates on our location, follow us on social media!</p>
+              <p>We also post daily memes and secret menu items there!</p>
+              <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social-link">📱</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-container">
+            <img src="30147490-f6f0-42d4-bee4-230929e7226b.png" alt="Map of food truck locations">
+          </div>
+        </div>
+        
+        <!-- Order Page -->
+        <div class="page" id="order">
+          <h2>Order Online</h2>
+          <p>Place your order for pickup at our truck! Please order at least 30 minutes in advance.</p>
+          
+          <form class="order-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="pickup-time">Pickup Time</label>
+              <input type="time" id="pickup-time" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="pickup-location">Pickup Location</label>
+              <select id="pickup-location" class="form-control" required>
+                <option value="">-- Select Location --</option>
+                <option value="central-park">Central Park (Monday)</option>
+                <option value="tech-district">Tech District (Tuesday)</option>
+                <option value="university">University Campus (Wednesday)</option>
+                <option value="downtown">Downtown Square (Thursday)</option>
+                <option value="beach">Beach Boardwalk (Friday)</option>
+                <option value="food-rally">Food Truck Rally (Saturday)</option>
+                <option value="farmers-market">Farmers Market (Sunday)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="order-items">Your Order</label>
+              <textarea id="order-items" class="form-control" rows="5" placeholder="List the items you want to order..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="special-requests">Special Requests</label>
+              <textarea id="special-requests" class="form-control" rows="3" placeholder="Allergies, special instructions, or meme requests..."></textarea>
+            </div>
+            
+            <button type="submit" class="form-submit">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 The Meme Seller Food Truck. All rights reserved.</p>
+      <p>Warning: Our food may cause uncontrollable laughter and meme addiction.</p>
+      <div class="social-links">
+        <a href="https://github.com/XEKOyt" class="social-link">Github</a>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Theme switch button -->
+  <div class="theme-switch" id="theme-switch">🌙</div>
+  
+  <!-- Meme toast -->
+  <div class="meme-toast" id="meme-toast"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
